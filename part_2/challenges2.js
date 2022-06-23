@@ -145,7 +145,24 @@ GOOD LUCK 😀
 // Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
 // Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
 // tips and totals arrays 😉
-// Bonus:
+// GOOD LUCK 😀
+
+const calcTip = function (bills) {
+return bills >=50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+}
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+for(let  i=0; i < bills.length; i++){
+const tip = calcTip(bills[i]);
+tips.push(tip);
+totals.push(tip+bills[i]);
+}
+console.log(bills, tips, totals);
+
+//Bonus:
 // 4. Bonus: Write a function 'calcAverage' which takes an array called 'arr' as
 // an argument. This function calculates the average of all numbers in the given
 // array. This is a difficult challenge (we haven't done this before)! Here is how to
@@ -158,4 +175,14 @@ GOOD LUCK 😀
 // 4.2.To calculate the average, divide the sum you calculated before by the
 // length of the array (because that's the number of elements)
 // 4.3.Call the function with the 'totals' array
-// GOOD LUCK 😀
+
+const calcAverage = function(arr){
+let sum = 0;
+for(let i=0; i < arr.length; i++){
+sum += arr[i];
+}
+// console.log(sum);
+return sum / arr.length;
+}
+
+console.log(calcAverage([2,4,7]));

@@ -266,3 +266,13 @@
 // but this time using a while loop (call the array 'percentages3')
 // 2. Reflect on what solution you like better for this task: the for loop or the while
 // loop?
+
+// const populations = [100,200,300,400];
+// const percentages3 = [];
+
+// let rep = 0;
+// while (rep < populations.length){
+//     percentages3.push((populations[rep] / 7900) * 100);
+//     rep++;
+// }
+// console.log(percentages3);
